@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chandru S - Portfolio</title>
+    <link href="style.css">
+    <script src="script.js"></script>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <script> 
+    document.addEventListener("DOMContentLoaded", function () {
+    const links = document.querySelectorAll("nav ul li a");
+    links.forEach(link => {
+        link.addEventListener("click", function (e) {
+            e.preventDefault();
+            document.querySelector(this.getAttribute("href")).scrollIntoView({
+                behavior: "smooth"
+            });
+        });
+    });
+});
+    </script>
+    <style> 
+    body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f5f5f5;
+    color: #333;
+}
+
+header {
+    background: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.typing-effect {
+    font-size: 18px;
+    font-weight: bold;
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid white;
+    width: 0;
+    animation: typing 3s steps(30, end) forwards, blink 0.8s infinite;
+}
+
+@keyframes typing {
+    from { width: 0; }
+    to { width: 250px; }
+}
+
+@keyframes blink {
+    50% { border-color: transparent; }
+}
+
+section {
+    padding: 20px;
+    margin: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    background: #3498db;
+    color: white;
+    padding: 8px;
+    margin: 5px 0;
+    border-radius: 5px;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+form input, form textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+form button {
+    background: #3498db;
+    color: white;
+    padding: 12px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background: #2980b9;
+}
+    .social-icons a {
+    display: inline-flex;
+    align-items: center;
+    margin: 10px;
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+}
+
+.social-icons i {
+    margin-right: 8px;
+    font-size: 24px;
+}
+
+.social-icons a:hover {
+    color: #007bff;
+}
+
+    </style>
+    <header>
+        <h1>Chandru S</h1>
+        <p class="typing-effect">Aspiring Software Engineer</p>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#certifications">Certifications</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I'm a 3rd-year Computer Science Engineering student at the University College of Engineering Tindivanam. Passionate about Java, web development, and technology.</p>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>Java</li>
+            <li>Frontend Development (HTML, CSS, JS)</li>
+        </ul>
+    </section>
+
+    <section id="education">
+        <h2>Education</h2>
+        <p><strong>10th Grade:</strong> 472 marks</p>
+        <p><strong>12th Grade:</strong> 505 marks</p>
+        <p><strong>College:</strong> University College of Engineering Tindivanam</p>
+    </section>
+
+    <section id="certifications">
+        <h2>Certifications</h2>
+        <ul>
+            <li><a href="https://api2.sololearn.com/v2/certificates/CC-SVX8KEPR/image/jpg?t=638545667238141460" target="_blank">Introduction to Java - SoloLearn</a></li>
+            <li><a href="https://api2.sololearn.com/v2/certificates/CC-JJ6EKLBU/image/jpg?t=638358022066690370" target="_blank">Introduction to C Programming - SoloLearn</a></li>
+            <li><a href="https://www.guvi.in/share-certificate/65943148928jl8K7Rc" target="_blank">Python Zero to Hero - Guvi, HCL</a></li>
+            <li><a href="https://drive.google.com/file/d/1svvXoJ-825wACH4uhEdSCo78FikwcsKB/view?usp=drivesdk" target="_blank">MERN Stack - Novi Tech</a></li>
+        </ul>
+    </section>
+
+    <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:chandrusurya523@gmail.com">chandrusurya523@gmail.com</a></p>
+    <p>Phone: 9176024880</p>
+    <div class="social-icons">
+      <a href="https://github.com/Druchan" target="_blank">
+        <i class="fab fa-github"></i> GitHub
+      </a>
+      <a href="https://www.instagram.com/_druchan__official_" target="_blank">
+        <i class="fab fa-instagram"></i> Instagram
+      </a>
+      <a href="https://www.linkedin.com/in/chandru-s-7bbb072a1" target="_blank">
+        <i class="fab fa-linkedin"></i> LinkedIn
+      </a>
+    </div>
+    <p><a href="https://github.com/Druchan" target="_blank">GitHub</a> | 
+       <a href="https://www.linkedin.com/in/chandru-s-7bbb072a1" target="_blank">LinkedIn</a> | 
+       <a href="https://www.instagram.com/_druchan__official_" target="_blank">Instagram</a></p>
+
+    <!-- Contact Form -->
+    <form action="https://formspree.io/f/mqaegnrn" method="POST">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required placeholder="Enter your name">
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required placeholder="Enter your email">
+        
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required placeholder="Your message here..."></textarea>
+        
+        <button type="submit">Send Message</button>
+    </form>
+</section>
+
+    <footer>
+        <p>© 2025 Chandru S | All Rights Reserved</p>
+    </footer>
+</body>
+</html>
